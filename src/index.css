@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f0f0f0;
+  color: #1e325a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dot grid pattern for dashboard feel */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(41, 213, 248, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
