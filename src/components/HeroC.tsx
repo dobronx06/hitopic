@@ -4,7 +4,11 @@ import { ArrowRight } from 'lucide-react'
 import { motion } from 'motion/react'
 import Navbar from './Navbar'
 
-export default function HeroC() {
+interface HeroCProps {
+  bg?: 'video' | 'dark' | 'gradient'
+}
+
+export default function HeroC({ bg: _bg }: HeroCProps) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
